@@ -469,4 +469,20 @@ header {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
+
+footer {
+  padding: 2rem;
+}
+
+footer .social-media {
+  margin-top: 3rem;
+}
+
+footer .social-media ul li {
+  margin-right: 1rem;
+}
+
+footer .social-media ul li a {
+  color: var(--color-white);
+}
 /*# sourceMappingURL=styles.css.map */

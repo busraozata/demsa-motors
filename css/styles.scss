@@ -430,3 +430,18 @@ header{
         }
     }
 }
+
+footer{
+    padding: 2rem;
+    .social-media{
+        margin-top: 3rem;
+        ul{
+            li{
+                margin-right: 1rem;
+                a{
+                    color: var(--color-white);
+                }
+            }
+        }
+    }
+}
