@@ -1130,10 +1130,19 @@ header {
     }
 }
 .referances {
+    background-color: #0d0d0d;
+    padding: 2rem 0rem;
 
-    
     .slider {
         overflow: hidden;
+    }
+    img {
+        height: 9rem;
+        object-fit: contain;
+       
+        @media screen and (max-width:$xl-breakpoint) {
+            height: 6rem;
+        }
     }
 
     .swiper-slide {
@@ -1143,9 +1152,8 @@ header {
 
     .slider__item {
         font-size: 24px;
-        padding: 12px 32px;
-        background-color: #ccc;
-        text-align: center;
+/*         padding: 12px 32px;
+ */        text-align: center;
     }
 
     .swiper-wrapper {
@@ -1154,15 +1162,14 @@ header {
 }
 
 .vehicles {
-    .back-text{
+    .back-text {
         position: absolute;
-        top:8%;
+        top: 8%;
         left: -6rem;
         display: none;
-        span{
+        span {
             color: var(--color-white);
             font-size: calc(35 * (100vw - 80em) / 40);
-
         }
     }
     position: relative;
