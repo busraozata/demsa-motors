@@ -352,6 +352,29 @@ header {
             }
         }
         .navigation {
+            .social-media {
+                margin-top: 2rem;
+                margin-left: 2rem;
+                @media screen and (max-width: $lg-breakpoint) {
+                    margin-bottom: 2rem;
+                }
+                ul {
+                    li {
+                        margin-right: 1.3rem;
+                        a {
+                            color: var(--color-white);
+                            font-size: 1.3rem;
+                            transition: 0.3s all;
+                            &:hover {
+                                color: var(--color-yellow);
+                            }
+                            @media screen and (max-width: $xl-breakpoint) {
+                                font-size: 1.1rem;
+                            }
+                        }
+                    }
+                }
+            }
             .lang-area {
                 margin-left: 1rem;
                 margin-top: 2rem;
@@ -377,7 +400,7 @@ header {
                     min-width: 6rem;
                     padding-top: 1rem;
                     margin-top: 1rem;
-                    background-color: rgba(0, 0, 0, 0.658);
+                    background-color: transparent;
                     border-radius: 0rem;
                     li {
                         &:hover {
@@ -490,6 +513,7 @@ header {
                     background-color: rgba(0, 0, 0, 0.664);
                     overflow: hidden;
                     padding-bottom: 1.5rem !important;
+                   
                     &.show {
                         display: block !important;
                     }
@@ -504,6 +528,7 @@ header {
                         transform: none !important;
                         padding-left: 0rem !important;
                         padding-bottom: 0.5rem !important;
+                        background-color: transparent;
                     }
                     .dropdown-item {
                         color: var(--color-white);
@@ -511,7 +536,7 @@ header {
                         font-weight: 400;
                         position: relative;
                         @media screen and (max-width: $xl-breakpoint) {
-                            font-size: 1rem;
+                            font-size: 1.2rem;
                         }
                         &:hover,
                         &.active {
@@ -575,7 +600,7 @@ header {
                         padding: 2.3rem 0.9rem;
                     }
                     @media screen and (max-width: $xl-breakpoint) {
-                        font-size: 1.1rem;
+                        font-size: 1.3rem;
                     }
 
                     &.active {
