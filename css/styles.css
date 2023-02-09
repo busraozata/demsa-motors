@@ -238,6 +238,85 @@ header.sticky {
   }
 }
 
+header .lang-area {
+  margin-left: 1rem;
+}
+
+header .lang-area a {
+  color: var(--color-white);
+  font-size: 1rem;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .lang-area .btn {
+  color: var(--color-white);
+  font-size: 1.1rem !important;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .lang-area .btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+header .lang-area .dropdown-menu {
+  min-width: 6rem;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  background-color: rgba(0, 0, 0, 0.658);
+  border-radius: 0rem;
+}
+
+header .lang-area .dropdown-menu li:hover a {
+  color: var(--color-yellow) !important;
+}
+
+header .lang-area .dropdown-menu li a {
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  font-size: 1rem !important;
+  color: var(--color-white);
+}
+
+header .lang-area .dropdown-menu li a img {
+  max-width: 1.7rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+header .lang-area img {
+  max-width: 2rem;
+  margin-left: 0.5rem;
+}
+
+header .lang-area ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+header .lang-area ul li a {
+  border: none !important;
+}
+
+header .lang-area ul li a:hover {
+  background-color: transparent !important;
+}
+
 header .header-inner .img-wrapper .logo-toggle {
   padding-left: 2rem;
   cursor: pointer;
@@ -327,8 +406,88 @@ header .header-inner #toggle-btn i {
   z-index: 999999999;
 }
 
+header .header-inner .navigation .lang-area {
+  margin-left: 1rem;
+  margin-top: 2rem;
+}
+
+header .header-inner .navigation .lang-area a {
+  color: var(--color-white);
+  font-size: 1rem;
+  font-weight: 500;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+header .header-inner .navigation .lang-area .btn {
+  color: var(--color-white);
+  font-size: 1.1rem !important;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .header-inner .navigation .lang-area .btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+header .header-inner .navigation .lang-area .dropdown-menu {
+  min-width: 6rem;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  background-color: rgba(0, 0, 0, 0.658);
+  border-radius: 0rem;
+}
+
+header .header-inner .navigation .lang-area .dropdown-menu li:hover a {
+  color: var(--color-yellow) !important;
+}
+
+header .header-inner .navigation .lang-area .dropdown-menu li a {
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  font-size: 1rem !important;
+  color: var(--color-white);
+}
+
+header .header-inner .navigation .lang-area .dropdown-menu li a img {
+  max-width: 1.7rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+header .header-inner .navigation .lang-area img {
+  max-width: 2rem;
+  margin-left: 0.5rem;
+}
+
+header .header-inner .navigation .lang-area ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+header .header-inner .navigation .lang-area ul li a {
+  border: none !important;
+}
+
+header .header-inner .navigation .lang-area ul li a:hover {
+  background-color: transparent !important;
+}
+
 @media screen and (max-width: 1200px) {
-  header .header-inner .navigation img {
+  header .header-inner .navigation .logo {
     margin-left: 2rem;
     margin-bottom: 2rem;
     margin-top: 1rem;
@@ -345,7 +504,7 @@ header .header-inner .navigation .menu-area li {
 
 @media screen and (max-width: 1440px) {
   header .header-inner .navigation .menu-area li {
-    margin-right: 1.5rem;
+    margin-right: 1rem;
   }
 }
 
@@ -379,7 +538,10 @@ header .header-inner .navigation .menu-area li:last-child {
     position: fixed;
     height: 100vh;
     width: 100%;
-    background-color: var(--color-bg);
+    background-image: url(../img/dark-grey-mini-sport-coupe-road.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     z-index: 99999999;
     bottom: 0;
     left: -100rem;
@@ -393,6 +555,18 @@ header .header-inner .navigation .menu-area li:last-child {
             align-items: flex-start !important;
     -webkit-transition: 0.3s all;
     transition: 0.3s all;
+  }
+  header .header-inner .navigation::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.692);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: -1;
+    position: absolute;
   }
   header .header-inner .navigation.active {
     left: 0;
@@ -512,18 +686,17 @@ header .header-inner .navigation li .nav-link {
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
   position: relative;
-  font-family: "Cochin";
 }
 
 @media screen and (min-width: 1600px) {
   header .header-inner .navigation li .nav-link {
-    padding: 2.3rem 1.8rem !important;
+    padding: 2.3rem 1rem !important;
   }
 }
 
 @media screen and (min-width: 1440px) {
   header .header-inner .navigation li .nav-link {
-    padding: 2.3rem 1.2rem;
+    padding: 2.3rem 1rem;
   }
 }
 
@@ -553,7 +726,7 @@ header .header-inner .navigation li .nav-link:hover {
   color: #e4d16e;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1440px) {
   header .header-inner .phone-area {
     display: none;
   }
@@ -829,7 +1002,6 @@ header .header-inner .language ul li a.active {
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
   position: relative;
-  font-family: "Cochin";
   padding-left: 0rem;
 }
 
@@ -2438,6 +2610,22 @@ header .header-inner .language ul li a.active {
 @media screen and (max-width: 600px) {
   .vehicles .swiper-container .swiper-wrapper {
     padding: 3rem 0rem;
+  }
+}
+
+.vehicles .swiper-container .swiper-wrapper .swiper-slide img {
+  height: 22rem;
+}
+
+@media screen and (max-width: 1440px) {
+  .vehicles .swiper-container .swiper-wrapper .swiper-slide img {
+    height: 18rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .vehicles .swiper-container .swiper-wrapper .swiper-slide img {
+    height: 15rem;
   }
 }
 

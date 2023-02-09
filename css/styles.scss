@@ -223,7 +223,68 @@ header {
     @media screen and (max-width: $xl-breakpoint) {
         padding: 1rem 1rem 1rem 1rem;
     }
+    .lang-area {
+        margin-left: 1rem;
+        a {
+            color: var(--color-white);
+            font-size: 1rem;
+            font-weight: 500;
+            display: flex;
+            
+        }
+        .btn {
+            color: var(--color-white);
+            font-size: 1.1rem !important;
+            font-weight: 500;
+            display: flex;
 
+            &:focus {
+                box-shadow: none;
+                outline: none;
+            }
+        }
+        .dropdown-menu {
+            min-width: 6rem;
+            padding-top: 1rem;
+            margin-top: 1rem;
+            background-color: rgba(0, 0, 0, 0.658);
+            border-radius: 0rem;
+            li {
+                &:hover {
+                    a {
+                        color: var(--color-yellow) !important;
+                    }
+                }
+                a {
+                    transition: 0.3s all;
+                    font-size: 1rem !important;
+                    color: var(--color-white);
+                    img {
+                        max-width: 1.7rem;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+        img {
+            max-width: 2rem;
+            margin-left: 0.5rem;
+        }
+        ul {
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 0.5rem;
+                a {
+                    border: none !important;
+                    &:hover {
+                        background-color: transparent !important;
+                    }
+                }
+            }
+        }
+    }
     .header-inner {
         .img-wrapper {
             .logo-toggle {
@@ -291,7 +352,70 @@ header {
             }
         }
         .navigation {
-            img {
+            .lang-area {
+                margin-left: 1rem;
+                margin-top: 2rem;
+                a {
+                    color: var(--color-white);
+                    font-size: 1rem;
+                    font-weight: 500;
+                    display: flex !important;
+                    
+                }
+                .btn {
+                    color: var(--color-white);
+                    font-size: 1.1rem !important;
+                    font-weight: 500;
+                    display: flex;
+        
+                    &:focus {
+                        box-shadow: none;
+                        outline: none;
+                    }
+                }
+                .dropdown-menu {
+                    min-width: 6rem;
+                    padding-top: 1rem;
+                    margin-top: 1rem;
+                    background-color: rgba(0, 0, 0, 0.658);
+                    border-radius: 0rem;
+                    li {
+                        &:hover {
+                            a {
+                                color: var(--color-yellow) !important;
+                            }
+                        }
+                        a {
+                            transition: 0.3s all;
+                            font-size: 1rem !important;
+                            color: var(--color-white);
+                            img {
+                                max-width: 1.7rem;
+                                object-fit: contain;
+                            }
+                        }
+                    }
+                }
+                img {
+                    max-width: 2rem;
+                    margin-left: 0.5rem;
+                }
+                ul {
+                    li {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-bottom: 0.5rem;
+                        a {
+                            border: none !important;
+                            &:hover {
+                                background-color: transparent !important;
+                            }
+                        }
+                    }
+                }
+            }
+            .logo {
                 @media screen and (max-width: $xl-breakpoint) {
                     margin-left: 2rem;
                     margin-bottom: 2rem;
@@ -304,7 +428,7 @@ header {
                 li {
                     margin-right: 2rem;
                     @media screen and (max-width: 1440px) {
-                        margin-right: 1.5rem;
+                        margin-right: 1rem;
                     }
                     &:last-child {
                         margin-right: 0rem;
@@ -324,7 +448,10 @@ header {
                 position: fixed;
                 height: 100vh;
                 width: 100%;
-                background-color: var(--color-bg);
+                background-image: url(../img/dark-grey-mini-sport-coupe-road.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
                 z-index: 99999999;
                 bottom: 0;
                 left: -100rem;
@@ -333,6 +460,18 @@ header {
                 justify-content: flex-start !important;
                 align-items: flex-start !important;
                 transition: 0.3s all;
+                &::before{
+                    content: "";
+                    background-color: rgba(0, 0, 0, 0.692);
+                    height: 100%;
+                    width: 100%;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    top: 0;
+                    z-index: -1;
+                    position: absolute;
+                }
                 &.active {
                     left: 0;
                 }
@@ -424,13 +563,13 @@ header {
                     font-size: 1.4rem;
                     transition: 0.3s all;
                     position: relative;
-                    font-family: "Cochin";
 
+                    
                     @media screen and (min-width: 1600px) {
-                        padding: 2.3rem 1.8rem !important;
+                        padding: 2.3rem 1rem !important;
                     }
                     @media screen and (min-width: 1440px) {
-                        padding: 2.3rem 1.2rem;
+                        padding: 2.3rem 1rem;
                     }
                     @media screen and (min-width: 1366px) {
                         padding: 2.3rem 0.9rem;
@@ -456,7 +595,7 @@ header {
             }
         }
         .phone-area {
-            @media screen and (max-width: $xl-breakpoint) {
+            @media screen and (max-width: 1440px) {
                 display: none;
             }
             a {
@@ -653,7 +792,6 @@ header {
                 font-size: 5rem;
                 transition: 0.3s all;
                 position: relative;
-                font-family: "Cochin";
                 padding-left: 0rem;
                 @media screen and (max-width: 1440px) {
                     font-size: 4rem;
@@ -1756,6 +1894,15 @@ header {
                 padding: 3rem 0rem;
             }
             .swiper-slide {
+                img{
+                    height: 22rem;
+                    @media screen and (max-width:1440px) {
+                        height: 18rem;
+                    }
+                    @media screen and (max-width:$xl-breakpoint) {
+                        height: 15rem;
+                    }
+                }
                 .box {
                     .img-link {
                         width: 100%;

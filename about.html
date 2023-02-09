@@ -31,7 +31,7 @@
                 <div class="navigation">
                     <div class="img-wrapper d-xl-none d-block">
                         <a href="index.html">
-                            <img src="./img/logo.png" class="img-fluid" alt="logo">
+                            <img class="logo" src="./img/logo.png" class="img-fluid" alt="logo">
                         </a>
                     </div>
                     <ul class="menu-area d-flex justify-content-center align-items-center">
@@ -40,22 +40,29 @@
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Bizi Tanıyın</a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="about.html">Hakkımızda</a></li>
-                                <li><a class="dropdown-item" href="our-services.html">Hizmetlerimiz</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Araçlarımız</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="our-tools-detail.html">Jip</a></li>
-                                <li><a class="dropdown-item" href="our-tools-detail.html">Kamyon</a></li>
-                                <li><a class="dropdown-item" href="our-tools-detail.html">Spor</a></li>
-
-
-                            </ul>
+                            <a href="our-services.html" class="nav-link" >Hizmetlerimiz</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="our-tools.html" class="nav-link" >Araçlarımız</a>
                         </li>
                         <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
                         <li class="nav-item"><a href="#" class="nav-link"> İletişim</a></li>
                     </ul>
+                    <div class="dropdown lang-area d-xl-none d-block">
+                        <button class="btn d-flex align-items-center dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>TR</span> <img src="./img/tr.png" class="img-fluid" alt="">
+                        </button>
+                        
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a href="/"><span>TR</span><img src="./img/tr.png" class="img-fluid" alt=""></a></li>
+                            <li><a href=""><span>ENG</span><img src="./img/eng.png" class="img-fluid" alt=""></a></li>
+    
+    
+                        </ul>
+                    </div>
                     <!-- <div class="language d-xl-none d-flex justify-content-center align-items-center">
                         <img src="./img/world.png" class="img-fluid" alt="world">
                         <ul class="d-flex align-items-center">
@@ -68,6 +75,18 @@
                     <a href="tel:+902166517380">
                         <i class="fa-solid fa-phone"></i> <span>+90 216 651 73 80</span>
                     </a>
+                </div>
+                <div class="dropdown lang-area d-xl-block d-none">
+                    <button class="btn d-flex align-items-center dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span>TR</span> <img src="./img/tr.png" class="img-fluid" alt="">
+                    </button>
+                    
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a href="/"><span>TR</span><img src="./img/tr.png" class="img-fluid" alt=""></a></li>
+                        <li><a href=""><span>ENG</span><img src="./img/eng.png" class="img-fluid" alt=""></a></li>
+
+
+                    </ul>
                 </div>
                 <div class="glass">
                     <a href="#search">
@@ -93,7 +112,6 @@
                             <li class="nav-item"><a href="#" class="nav-link active">Anasayfa</a></li>
                             <li class="nav-item dropdown">
                                 <a href="about.html" class="nav-link">Bizi Tanıyın</a>
-                             
                             </li>
                             <li class="nav-item">
                                 <a href="our-tools.html" class="nav-link">Araçlarımız</a>
