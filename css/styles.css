@@ -499,6 +499,12 @@ header .header-inner .navigation li .dropdown-toggle::before {
   right: -8px !important;
 }
 
+@media screen and (max-width: 1200px) {
+  header .header-inner .navigation li .dropdown-toggle::before {
+    display: none;
+  }
+}
+
 header .header-inner .navigation li .nav-link {
   color: var(--color-white);
   font-weight: 300;

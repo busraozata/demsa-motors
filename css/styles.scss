@@ -413,6 +413,9 @@ header {
                     display: block;
                     position: absolute;
                     right: -8px !important;
+                    @media screen and (max-width:$xl-breakpoint) {
+                        display: none;
+                    }
                 }
 
                 .nav-link {
