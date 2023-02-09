@@ -1817,6 +1817,12 @@ header .header-inner .language ul li a.active {
   font-size: 1.3rem;
 }
 
+@media screen and (max-width: 600px) {
+  .our-tool-detail .nav-tabs .nav-link span {
+    font-size: 1rem;
+  }
+}
+
 .our-tool-detail .btn {
   background-image: url(../img/layer.png);
   background-repeat: no-repeat;
@@ -1999,7 +2005,7 @@ header .header-inner .language ul li a.active {
 
 @media screen and (max-width: 1200px) {
   .detail .info-area {
-    padding-left: 1rem;
+    padding-left: 1rem !important;
   }
 }
 

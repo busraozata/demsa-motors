@@ -1335,6 +1335,9 @@ header {
             span {
                 margin-left: 1rem;
                 font-size: 1.3rem;
+                @media screen and (max-width:$sm-breakpoint) {
+                    font-size: 1rem;
+                }
             }
         }
     }
@@ -1469,7 +1472,7 @@ header {
     .info-area {
         padding-left: 2rem;
         @media screen and (max-width: $xl-breakpoint) {
-            padding-left: 1rem;
+            padding-left: 1rem !important;
         }
     }
 }
