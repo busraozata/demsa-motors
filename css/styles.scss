@@ -576,6 +576,10 @@ header {
             height: 30rem;
             width: 30rem;
             object-fit: contain;
+            @media screen and (max-width:1440px) {
+                height: 25rem;
+                width: 25rem;
+            }
             @media screen and (max-width: $xl-breakpoint) {
                 height: 20rem;
                 width: 20rem;

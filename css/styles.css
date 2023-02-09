@@ -710,6 +710,13 @@ header .header-inner .language ul li a.active {
      object-fit: contain;
 }
 
+@media screen and (max-width: 1440px) {
+  .menu-screen .black img {
+    height: 25rem;
+    width: 25rem;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .menu-screen .black img {
     height: 20rem;
