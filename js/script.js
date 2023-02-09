@@ -120,7 +120,6 @@ const sl = new Swiper(slider, {
   },
 });
 
-
 $(function () {
   $('a[href="#search"]').on("click", function (event) {
     event.preventDefault();
@@ -143,3 +142,11 @@ $(function () {
     return false;
   });
 });
+
+$(document).ready(function(){
+  $(".logo-toggle").click(function(){
+    $(".menu-screen").toggleClass("active");
+  });
+});
+
+AOS.init({disable: 'mobile'});
