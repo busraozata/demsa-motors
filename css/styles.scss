@@ -1170,6 +1170,9 @@ header {
             span {
                 margin-left: 1rem;
                 font-size: 1.3rem;
+                @media screen and (max-width:$sm-breakpoint) {
+                    font-size: 1rem;
+                }
             }
         }
     }
@@ -1700,6 +1703,9 @@ header {
             span {
                 margin-left: 1rem;
                 font-size: 1.3rem;
+                @media screen and (max-width:$sm-breakpoint) {
+                    font-size: 1rem;
+                }
             }
         }
     }

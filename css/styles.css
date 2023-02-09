@@ -1589,6 +1589,12 @@ header .header-inner .language ul li a.active {
   font-size: 1.3rem;
 }
 
+@media screen and (max-width: 600px) {
+  .our-tools .nav-tabs .nav-link span {
+    font-size: 1rem;
+  }
+}
+
 .our-tools .btn {
   background-image: url(../img/layer.png);
   background-repeat: no-repeat;
@@ -2360,6 +2366,12 @@ header .header-inner .language ul li a.active {
 .vehicles .nav-tabs .nav-link span {
   margin-left: 1rem;
   font-size: 1.3rem;
+}
+
+@media screen and (max-width: 600px) {
+  .vehicles .nav-tabs .nav-link span {
+    font-size: 1rem;
+  }
 }
 
 .vehicles .btn {
