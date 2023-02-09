@@ -177,6 +177,13 @@ a {
   opacity: 1;
 }
 
+a:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  border: none;
+}
+
 header {
   padding: 1rem 6rem 0.2rem 6rem;
   position: absolute;
@@ -528,6 +535,12 @@ header .header-inner .navigation li .nav-link {
 
 header .header-inner .navigation li .nav-link.active::before {
   width: 100%;
+}
+
+header .header-inner .navigation li .nav-link:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
 }
 
 header .header-inner .navigation li .nav-link:hover {

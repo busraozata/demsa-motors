@@ -178,6 +178,13 @@ $xxl-breakpoint: 1400px; //Extra extra large
         opacity: 1;
     }
 }
+a {
+    &:focus {
+        box-shadow: none;
+        outline: none;
+        border: none;
+    }
+}
 
 header {
     padding: 1rem 6rem 0.2rem 6rem;
@@ -228,7 +235,7 @@ header {
                     margin-top: -0.3rem;
                     position: relative;
                 }
-                @media screen and (max-width:$xl-breakpoint) {
+                @media screen and (max-width: $xl-breakpoint) {
                     display: none !important;
                 }
             }
@@ -392,7 +399,7 @@ header {
                 .dropdown-toggle {
                     position: relative;
                 }
-                .dropdown-toggle::after{
+                .dropdown-toggle::after {
                     display: none;
                 }
                 .dropdown-toggle::before {
@@ -406,9 +413,8 @@ header {
                     display: block;
                     position: absolute;
                     right: -8px !important;
-                    
                 }
-                
+
                 .nav-link {
                     color: var(--color-white);
                     font-weight: 300;
@@ -422,7 +428,6 @@ header {
                     }
                     @media screen and (min-width: 1440px) {
                         padding: 2.3rem 1.2rem;
-                        
                     }
                     @media screen and (min-width: 1366px) {
                         padding: 2.3rem 0.9rem;
@@ -436,12 +441,14 @@ header {
                             width: 100%;
                         }
                     }
+                    &:focus {
+                        box-shadow: none;
+                        outline: none;
+                    }
 
                     &:hover {
                         color: #e4d16e;
-                       
                     }
-                    
                 }
             }
         }
@@ -526,14 +533,14 @@ header {
     align-items: center;
     left: -100%;
     transition: 0.3s all;
-    &.active{
+    &.active {
         left: 0;
     }
     /* padding: 5rem 6rem; */
-    @media screen and (max-width:$xl-breakpoint) {
+    @media screen and (max-width: $xl-breakpoint) {
         display: none;
     }
-    &::before{
+    &::before {
         content: "";
         position: absolute;
         height: 90%;
@@ -562,12 +569,11 @@ header {
         height: 100vh;
     }
     .black {
-       
         img {
             height: 30rem;
             width: 30rem;
             object-fit: contain;
-            @media screen and (max-width:$xl-breakpoint) {
+            @media screen and (max-width: $xl-breakpoint) {
                 height: 20rem;
                 width: 20rem;
             }
@@ -585,7 +591,7 @@ header {
         transition: 0.3s all;
         width: 100%;
         padding-left: 12rem;
-        @media screen and (max-width:1440px) {
+        @media screen and (max-width: 1440px) {
             padding-left: 8rem;
         }
         &.active {
@@ -598,14 +604,14 @@ header {
             padding-left: 0rem !important;
             padding-bottom: 0.5rem !important;
             background-color: transparent;
-            .dropdown-item{
+            .dropdown-item {
                 color: var(--color-white);
                 padding-left: 0rem;
                 font-size: 4rem;
-                @media screen and (max-width:1440px) {
+                @media screen and (max-width: 1440px) {
                     font-size: 3rem;
                 }
-                &:hover{
+                &:hover {
                     background-color: transparent !important;
                 }
             }
@@ -615,7 +621,7 @@ header {
             display: flex;
             align-items: center;
         }
-        .dropdown-toggle::after{
+        .dropdown-toggle::after {
             display: none;
         }
         .dropdown-toggle::before {
@@ -629,7 +635,6 @@ header {
             display: block;
             position: absolute;
             right: -19px !important;
-            
         }
         .menu-area {
             flex-direction: column;
@@ -643,14 +648,14 @@ header {
                 position: relative;
                 font-family: "Cochin";
                 padding-left: 0rem;
-                @media screen and (max-width:1440px) {
+                @media screen and (max-width: 1440px) {
                     font-size: 4rem;
                 }
 
                 @media screen and (max-width: $xl-breakpoint) {
                     font-size: 3rem;
                 }
-                &:hover{
+                &:hover {
                     color: var(--color-yellow);
                 }
                 &.active {

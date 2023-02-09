@@ -27,6 +27,10 @@ var swiper = new Swiper(".mySwiperBanner", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -36,6 +40,10 @@ var swiper = new Swiper(".mySwiperBlog", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
   },
   navigation: {
     nextEl: ".swiper-button-next",
@@ -92,6 +100,10 @@ var mySwiper = new Swiper(".swiper-container", {
 
 var swiper = new Swiper(".mySwiperImageGallery", {
   spaceBetween: 30,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   breakpoints: {
     640: {
       slidesPerView: 1,
