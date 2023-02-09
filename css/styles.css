@@ -2652,6 +2652,10 @@ header .header-inner .language ul li a.active {
 @media screen and (max-width: 600px) {
   .we-about .container-fluid .content .text p {
     font-size: 0.9rem;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
   }
 }
 
@@ -2756,6 +2760,15 @@ header .header-inner .language ul li a.active {
 }
 
 @media screen and (max-width: 600px) {
+  .demsa .content .text p {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+}
+
+@media screen and (max-width: 600px) {
   .demsa .content .box {
     margin-bottom: 2rem;
   }
@@ -2809,7 +2822,7 @@ header .header-inner .language ul li a.active {
 
 @media screen and (max-width: 991px) {
   .blog .title {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -2834,6 +2847,15 @@ header .header-inner .language ul li a.active {
 @media screen and (max-width: 1440px) {
   .blog .title p {
     max-width: 70rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .blog .title p {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
   }
 }
 
@@ -2952,6 +2974,15 @@ header .header-inner .language ul li a.active {
   color: var(--color-white);
   font-size: 0.9rem;
   padding-right: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .blog .swiper .swiper-slide .card .card-body p {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
 }
 
 .blog .swiper .swiper-slide .card .card-body .btn {

@@ -413,7 +413,7 @@ header {
                     display: block;
                     position: absolute;
                     right: -8px !important;
-                    @media screen and (max-width:$xl-breakpoint) {
+                    @media screen and (max-width: $xl-breakpoint) {
                         display: none;
                     }
                 }
@@ -1173,7 +1173,7 @@ header {
             span {
                 margin-left: 1rem;
                 font-size: 1.3rem;
-                @media screen and (max-width:$sm-breakpoint) {
+                @media screen and (max-width: $sm-breakpoint) {
                     font-size: 1rem;
                 }
             }
@@ -1341,7 +1341,7 @@ header {
             span {
                 margin-left: 1rem;
                 font-size: 1.3rem;
-                @media screen and (max-width:$sm-breakpoint) {
+                @media screen and (max-width: $sm-breakpoint) {
                     font-size: 1rem;
                 }
             }
@@ -1706,7 +1706,7 @@ header {
             span {
                 margin-left: 1rem;
                 font-size: 1.3rem;
-                @media screen and (max-width:$sm-breakpoint) {
+                @media screen and (max-width: $sm-breakpoint) {
                     font-size: 1rem;
                 }
             }
@@ -1935,6 +1935,10 @@ header {
                     }
                     @media screen and (max-width: $sm-breakpoint) {
                         font-size: 0.9rem;
+                        display: -webkit-box;
+                        overflow: hidden;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
                     }
                 }
             }
@@ -2007,6 +2011,12 @@ header {
                 color: var(--color-white);
                 font-size: 0.9rem;
                 font-weight: 300;
+                @media screen and (max-width:$sm-breakpoint) {
+                    display: -webkit-box;
+                    overflow: hidden;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                }
             }
         }
         .box {
@@ -2044,7 +2054,7 @@ header {
     .title {
         margin-bottom: 4rem;
         @media screen and (max-width: $lg-breakpoint) {
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
         }
         h2 {
             color: var(--color-white);
@@ -2060,6 +2070,12 @@ header {
             font-size: 0.9rem;
             @media screen and (max-width: 1440px) {
                 max-width: 70rem;
+            }
+            @media screen and (max-width:$sm-breakpoint) {
+                display: -webkit-box;
+                overflow: hidden;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
             }
         }
     }
@@ -2146,6 +2162,12 @@ header {
                         color: var(--color-white);
                         font-size: 0.9rem;
                         padding-right: 2rem;
+                        @media screen and (max-width:$sm-breakpoint) {
+                            display: -webkit-box;
+                            overflow: hidden;
+                            -webkit-line-clamp: 2;
+                            -webkit-box-orient: vertical;
+                        }
                     }
                     .btn {
                         background-color: var(--color-yellow);
