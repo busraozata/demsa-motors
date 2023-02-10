@@ -120,6 +120,25 @@ var swiper = new Swiper(".mySwiperImageGallery", {
   },
 });
 
+var swiper = new Swiper(".mySwiperGif", {
+  slidesPerView: 2,
+  spaceBetween: 0,
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 0,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 0,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 0,
+    },
+  },
+});
+
 const slider = document.querySelector(".slider");
 const sl = new Swiper(slider, {
   slidesPerView: "auto",

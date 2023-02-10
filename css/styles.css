@@ -2237,6 +2237,60 @@ header .header-inner .language ul li a.active {
   z-index: 999999999999999999999999;
 }
 
+.video-gif {
+  margin-bottom: 9rem;
+  overflow: hidden;
+  position: relative;
+}
+
+@media screen and (max-width: 1200px) {
+  .video-gif {
+    margin-bottom: 6rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .video-gif {
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+  }
+}
+
+.video-gif .container-fluid {
+  padding: 0;
+}
+
+.video-gif video {
+  max-width: 100%;
+}
+
+.video-gif .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.video-gif .swiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.video-gif .swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 /* .gallery-area {
     overflow: hidden;
     .gallery {

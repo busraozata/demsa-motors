@@ -230,7 +230,6 @@ header {
             font-size: 1rem;
             font-weight: 500;
             display: flex;
-            
         }
         .btn {
             color: var(--color-white);
@@ -383,14 +382,13 @@ header {
                     font-size: 1rem;
                     font-weight: 500;
                     display: flex !important;
-                    
                 }
                 .btn {
                     color: var(--color-white);
                     font-size: 1.1rem !important;
                     font-weight: 500;
                     display: flex;
-        
+
                     &:focus {
                         box-shadow: none;
                         outline: none;
@@ -483,7 +481,7 @@ header {
                 justify-content: flex-start !important;
                 align-items: flex-start !important;
                 transition: 0.3s all;
-                &::before{
+                &::before {
                     content: "";
                     background-color: rgba(0, 0, 0, 0.692);
                     height: 100%;
@@ -513,7 +511,7 @@ header {
                     background-color: rgba(0, 0, 0, 0.664);
                     overflow: hidden;
                     padding-bottom: 1.5rem !important;
-                   
+
                     &.show {
                         display: block !important;
                     }
@@ -589,7 +587,6 @@ header {
                     transition: 0.3s all;
                     position: relative;
 
-                    
                     @media screen and (min-width: 1600px) {
                         padding: 2.3rem 1rem !important;
                     }
@@ -740,7 +737,7 @@ header {
             height: 30rem;
             width: 30rem;
             object-fit: contain;
-            @media screen and (max-width:1440px) {
+            @media screen and (max-width: 1440px) {
                 height: 25rem;
                 width: 25rem;
             }
@@ -1652,6 +1649,42 @@ header {
 .fancybox-container {
     z-index: 999999999999999999999999;
 }
+
+.video-gif {
+    margin-bottom: 9rem;
+    overflow: hidden;
+    position: relative;
+    @media screen and (max-width:$xl-breakpoint){
+        margin-bottom: 6rem;
+    }
+    @media screen and (max-width: $lg-breakpoint) {
+        margin-bottom: 4rem;
+        margin-top: 4rem;
+    }
+    .container-fluid {
+        padding: 0;
+    }
+    video {
+        max-width: 100%;
+    }
+    .swiper {
+        width: 100%;
+        height: 100%;
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
 /* .gallery-area {
     overflow: hidden;
     .gallery {
@@ -1919,12 +1952,12 @@ header {
                 padding: 3rem 0rem;
             }
             .swiper-slide {
-                img{
+                img {
                     height: 22rem;
-                    @media screen and (max-width:1440px) {
+                    @media screen and (max-width: 1440px) {
                         height: 18rem;
                     }
-                    @media screen and (max-width:$xl-breakpoint) {
+                    @media screen and (max-width: $xl-breakpoint) {
                         height: 15rem;
                     }
                 }
@@ -2187,7 +2220,7 @@ header {
                 color: var(--color-white);
                 font-size: 0.9rem;
                 font-weight: 300;
-                @media screen and (max-width:$sm-breakpoint) {
+                @media screen and (max-width: $sm-breakpoint) {
                     display: -webkit-box;
                     overflow: hidden;
                     -webkit-line-clamp: 2;
@@ -2247,7 +2280,7 @@ header {
             @media screen and (max-width: 1440px) {
                 max-width: 70rem;
             }
-            @media screen and (max-width:$sm-breakpoint) {
+            @media screen and (max-width: $sm-breakpoint) {
                 display: -webkit-box;
                 overflow: hidden;
                 -webkit-line-clamp: 2;
@@ -2338,7 +2371,7 @@ header {
                         color: var(--color-white);
                         font-size: 0.9rem;
                         padding-right: 2rem;
-                        @media screen and (max-width:$sm-breakpoint) {
+                        @media screen and (max-width: $sm-breakpoint) {
                             display: -webkit-box;
                             overflow: hidden;
                             -webkit-line-clamp: 2;
