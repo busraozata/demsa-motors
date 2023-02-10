@@ -2466,6 +2466,12 @@ header .header-inner .language ul li a.active {
 .referances {
   background-color: #0d0d0d;
   padding: 2rem 0rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.referances .container-fluid {
+  padding: 0;
 }
 
 .referances .slider {

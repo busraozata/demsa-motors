@@ -1798,6 +1798,11 @@ header {
 .referances {
     background-color: #0d0d0d;
     padding: 2rem 0rem;
+    overflow: hidden;
+    position: relative;
+    .container-fluid{
+        padding: 0;
+    }
 
     .slider {
         overflow: hidden;
