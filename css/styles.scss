@@ -1661,6 +1661,10 @@ header {
         margin-bottom: 4rem;
         margin-top: 4rem;
     }
+    @media screen and (max-width: $sm-breakpoint) {
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
     .container-fluid {
         padding: 0;
     }
