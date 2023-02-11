@@ -64,6 +64,34 @@ var swiper = new Swiper(".mySwiperBlog", {
     },
   },
 });
+var swiper = new Swiper(".mySwiperBlogPage", {
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 1,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 1,
+      spaceBetween: 50,
+    },
+  },
+});
 var mySwiper = new Swiper(".swiper-container", {
   observer: true,
   observeParents: true,
@@ -120,6 +148,15 @@ var swiper = new Swiper(".mySwiperImageGallery", {
   },
 });
 
+var swiper = new Swiper(".mySwiperImgGallery", {
+  slidesPerView: 2,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
 var swiper = new Swiper(".mySwiperGif", {
   slidesPerView: 2,
   spaceBetween: 0,
@@ -135,6 +172,25 @@ var swiper = new Swiper(".mySwiperGif", {
     1024: {
       slidesPerView: 4,
       spaceBetween: 0,
+    },
+  },
+});
+
+var swiper = new Swiper(".mySwiperLastBlog", {
+  direction: "vertical",
+
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+    768: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 40,
     },
   },
 });
