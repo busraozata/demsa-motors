@@ -4230,6 +4230,191 @@ header .header-inner .language ul li a.active {
   background-image: url(../img/left.png);
 }
 
+.contact {
+  overflow: hidden;
+  padding: 8rem 0rem 0rem 15rem;
+  position: relative;
+}
+
+@media screen and (max-width: 1440px) {
+  .contact {
+    padding: 8rem 0rem 0rem 7rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .contact {
+    padding: 6rem 0rem 0rem 4rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .contact {
+    padding: 4rem 2rem 2rem 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact {
+    padding: 3rem 2rem 2rem 2rem;
+  }
+}
+
+.contact .container-fluid {
+  padding: 0;
+}
+
+.contact .address {
+  max-width: 15rem;
+}
+
+.contact h4 {
+  color: var(--color-white);
+  font-size: 5rem;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 1440px) {
+  .contact h4 {
+    font-size: 3.7rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .contact h4 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .contact h4 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact h4 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.contact h6 {
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+@media screen and (max-width: 600px) {
+  .contact h6 {
+    font-size: 1.2rem;
+  }
+}
+
+.contact p {
+  color: var(--color-white);
+  font-size: 0.9rem;
+  font-weight: 300;
+  max-width: 27rem;
+}
+
+@media screen and (max-width: 1440px) {
+  .contact p {
+    max-width: 20rem;
+  }
+}
+
+.contact .address-area {
+  margin-top: 2rem;
+}
+
+.contact a {
+  color: var(--color-white);
+  font-weight: 400;
+  font-size: 0.9rem;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.contact a:hover {
+  color: var(--color-yellow);
+}
+
+.contact .email {
+  margin: 1rem 0rem;
+}
+
+.map-area {
+  position: relative;
+  padding-top: 3rem;
+}
+
+@media screen and (max-width: 991px) {
+  .map-area {
+    padding-top: 0rem;
+    margin-top: 2rem;
+  }
+}
+
+.map-area::before {
+  content: "";
+  background-color: var(--color-yellow);
+  height: 15rem;
+  width: 100%;
+  top: 0;
+  position: absolute;
+}
+
+@media screen and (max-width: 991px) {
+  .map-area::before {
+    display: none;
+  }
+}
+
+.map-area .map {
+  height: 40rem;
+  width: 100%;
+  position: relative;
+  margin-left: 3rem;
+}
+
+@media screen and (max-width: 1440px) {
+  .map-area .map {
+    margin-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .map-area .map {
+    height: 30rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .map-area .map {
+    margin-left: 0rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .map-area .map {
+    height: 15rem;
+  }
+}
+
+.map-area .map iframe {
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
 footer {
   position: relative;
   overflow: hidden;

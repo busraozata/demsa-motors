@@ -1081,8 +1081,8 @@ header {
                     }
                 }
             }
-            &:nth-child(3){
-                @media screen and (max-width:$lg-breakpoint) {
+            &:nth-child(3) {
+                @media screen and (max-width: $lg-breakpoint) {
                     display: none;
                 }
             }
@@ -2027,7 +2027,7 @@ header {
 
     .blog-lists {
         margin-top: 3rem;
-        
+
         @media screen and (max-width: $lg-breakpoint) {
             margin-top: 2rem !important;
         }
@@ -2184,7 +2184,7 @@ header {
 
     .img-gallery-area {
         padding: 3rem 4rem;
-        @media screen and (max-width:$xl-breakpoint) {
+        @media screen and (max-width: $xl-breakpoint) {
             padding: 2rem 0rem;
         }
 
@@ -2207,9 +2207,9 @@ header {
             }
         }
     }
-    .content{
+    .content {
         margin-top: 4rem;
-        @media screen and (max-width:$lg-breakpoint) {
+        @media screen and (max-width: $lg-breakpoint) {
             margin-top: 2rem;
         }
     }
@@ -2230,7 +2230,7 @@ header {
     }
     .top {
         margin-bottom: 4rem;
-        @media screen and (max-width:$lg-breakpoint) {
+        @media screen and (max-width: $lg-breakpoint) {
             margin-bottom: 2rem;
         }
         h2 {
@@ -3043,6 +3043,134 @@ header {
             &::before {
                 background-image: url(../img/left.png);
             }
+        }
+    }
+}
+
+.contact {
+    overflow: hidden;
+    padding: 8rem 0rem 0rem 15rem;
+    position: relative;
+    @media screen and (max-width: 1440px) {
+        padding: 8rem 0rem 0rem 7rem;
+    }
+    @media screen and (max-width: $xl-breakpoint) {
+        padding: 6rem 0rem 0rem 4rem;
+    }
+    @media screen and (max-width: $lg-breakpoint) {
+        padding: 4rem 2rem 2rem 2rem;
+    }
+    @media screen and (max-width: $sm-breakpoint) {
+        padding: 3rem 2rem 2rem 2rem;
+    }
+    .container-fluid {
+        padding: 0;
+    }
+
+    .address {
+        max-width: 15rem;
+    }
+
+    h4 {
+        color: var(--color-white);
+        font-size: 5rem;
+        font-weight: 600;
+        font-style: italic;
+        margin-bottom: 2rem;
+        @media screen and (max-width: 1440px) {
+            font-size: 3.7rem;
+        }
+        @media screen and (max-width: $xl-breakpoint) {
+            font-size: 2.5rem;
+        }
+        @media screen and (max-width: $lg-breakpoint) {
+            font-size: 2rem;
+        }
+        @media screen and (max-width: $sm-breakpoint) {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+    }
+    h6 {
+        color: var(--color-white);
+        font-weight: 600;
+        font-size: 1.3rem;
+        font-style: italic;
+        @media screen and (max-width: $sm-breakpoint) {
+            font-size: 1.2rem;
+        }
+    }
+    p {
+        color: var(--color-white);
+        font-size: 0.9rem;
+        font-weight: 300;
+        max-width: 27rem;
+        @media screen and (max-width: 1440px) {
+            max-width: 20rem;
+        }
+    }
+    .address-area {
+        margin-top: 2rem;
+    }
+    a {
+        color: var(--color-white);
+        font-weight: 400;
+        font-size: 0.9rem;
+        transition: 0.3s all;
+        &:hover {
+            color: var(--color-yellow);
+        }
+    }
+
+    .email {
+        margin: 1rem 0rem;
+    }
+}
+
+.map-area {
+    position: relative;
+    padding-top: 3rem;
+    @media screen and (max-width: $lg-breakpoint) {
+        padding-top: 0rem;
+        margin-top: 2rem;
+    }
+    &::before {
+        content: "";
+        background-color: var(--color-yellow);
+        height: 15rem;
+        width: 100%;
+        top: 0;
+        position: absolute;
+        @media screen and (max-width: $lg-breakpoint) {
+            display: none;
+        }
+    }
+    .map {
+        height: 40rem;
+        width: 100%;
+        position: relative;
+        margin-left: 3rem;
+        @media screen and (max-width: 1440px) {
+            margin-left: 2rem;
+        }
+        @media screen and (max-width: $xl-breakpoint) {
+            height: 30rem;
+        }
+        @media screen and (max-width: $lg-breakpoint) {
+            margin-left: 0rem;
+        }
+        @media screen and (max-width: $sm-breakpoint) {
+            height: 15rem;
+        }
+
+        iframe {
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
         }
     }
 }
