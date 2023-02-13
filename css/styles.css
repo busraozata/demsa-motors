@@ -1937,7 +1937,7 @@ header .header-inner .language ul li a.active {
 
 @media screen and (max-width: 600px) {
   .our-tools .box .btn {
-    padding: 0.1rem 0.8rem;
+    padding: 0.2rem 0.5rem;
     font-size: 0.9rem;
   }
 }
@@ -3694,7 +3694,7 @@ header .header-inner .language ul li a.active {
 
 @media screen and (max-width: 600px) {
   .vehicles .swiper-container .swiper-wrapper .swiper-slide .box .btn {
-    padding: 0.2rem 0.5rem;
+    padding: 0.2rem 0.8rem;
     font-size: 0.9rem;
   }
 }
