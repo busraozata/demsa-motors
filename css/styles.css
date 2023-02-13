@@ -3094,6 +3094,16 @@ header .header-inner .language ul li a.active {
   }
 }
 
+.widget .top h2 {
+  font-size: 2.6rem;
+}
+
+@media screen and (max-width: 1440px) {
+  .widget .top h2 {
+    font-size: 2.3rem;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .widget .top h2 {
     font-size: 1.9rem;
@@ -3182,7 +3192,7 @@ header .header-inner .language ul li a.active {
       -ms-flex-align: start !important;
           align-items: flex-start !important;
   height: 14rem !important;
-  padding-right: 4rem;
+  padding-right: 3rem;
 }
 
 @media screen and (max-width: 1200px) {
@@ -3253,7 +3263,7 @@ header .header-inner .language ul li a.active {
 .widget .last-blogs .lastblog .time {
   margin-bottom: 1rem !important;
   margin-top: 1rem !important;
-  font-size: 1rem !important;
+  font-size: 0.8rem !important;
   color: var(--color-white);
   font-weight: 500;
 }
@@ -3274,7 +3284,7 @@ header .header-inner .language ul li a.active {
 .widget .last-blogs .lastblog h6 {
   color: var(--color-white);
   text-align: left;
-  font-size: 2rem;
+  font-size: 1.3rem;
   font-weight: 600;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
@@ -3286,13 +3296,13 @@ header .header-inner .language ul li a.active {
 
 @media screen and (max-width: 1440px) {
   .widget .last-blogs .lastblog h6 {
-    font-size: 1.8rem;
+    font-size: 1.1rem;
   }
 }
 
 @media screen and (max-width: 1200px) {
   .widget .last-blogs .lastblog h6 {
-    font-size: 1.3rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -3309,7 +3319,7 @@ header .header-inner .language ul li a.active {
 }
 
 .widget .last-blogs .lastblog .btn {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   border: none !important;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
@@ -3317,7 +3327,7 @@ header .header-inner .language ul li a.active {
   background-color: var(--color-yellow);
   color: var(--color-white);
   border-radius: 0;
-  padding: 0.2rem 0.8rem;
+  padding: 0.2rem 0.6rem;
 }
 
 .widget .last-blogs .lastblog .btn:hover {
