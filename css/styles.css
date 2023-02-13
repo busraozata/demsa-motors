@@ -3331,6 +3331,12 @@ header .header-inner .language ul li a.active {
           box-shadow: none !important;
 }
 
+@media screen and (max-width: 600px) {
+  .widget .last-blogs .lastblog .btn {
+    padding: 0.1rem 0.7rem;
+  }
+}
+
 .widget .last-blogs .lastblog img {
   height: 8rem;
   width: 100%;
